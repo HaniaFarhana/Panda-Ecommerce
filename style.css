@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 100px 200px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(241, 236, 230);
+    padding: 10px;
+    align-items: center;
+}
+.navLogo{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.navLogo h1{
+    margin: 0;
+    margin-left: 15px;
+    font-size: 30px;
+  
+}
+.navLogo i{
+    font-size: 30px;
+    color: chocolate;
+}
+.navMenu{
+    font-size: 15px;
+    margin-right: 50px;
+    
+
+}
+.navMenu a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+.navMenu a:hover{
+    opacity: .50;
+}
+.banner{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+ 
+}
+.bannerContainer{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: #fceae8;
+   padding: 10px 20px;
+   border-radius: 10px;
+
+}
+.bannerDescription{
+    width: 50%;
+    padding-left: 30px;
+}
+.bannerDescription h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.money{
+    font-size: 40px;
+    color: orangered;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+button:hover{
+     opacity: .70;
+     box-shadow: 5px 5px 5px gray;
+     cursor: pointer;
+}
+.bannerImg{
+    width: 50%;
+
+}
+.bannerImg img{
+    width: 100%;
+}
+.cardHead{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.bodyCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 25%;
+    height: 5%;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgb(189, 182, 182);
+  
+}
+.cardImg img{
+    width: 100%;
+
+}
+.One{
+    background-color: #ffa500;
+}
+.Two{
+    background-color: #da70d6;
+}
+.Three{
+    background-color: #0000FF;
+}
+
+
+/* =========================================================================================================== */
+
+.bodyHeader{
+    font-size: 50px;
+   
+
+}
+.cardParent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.cardD{
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgb(174, 173, 173);
+}
+.cardText{
+    padding: 25px;
+}
+.cardText h1{
+    font-size: 24px;
+}
+
+.cardImage img{
+    width: 100% ;
+}
+
+/* ======================================================================================= */
+/* styling for tab */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .bodyCard{
+        flex-direction: column-reverse;
+        column-gap: 10px;
+        width: 20%;
+    }
+    
+    .cardParent{
+        gap: 20px;
+    }
+    .cardD{
+        width: 48%;
+    }
+    .banner{
+        margin-top: 50px;
+    }
+    main{
+        margin: 100px 100px;
+    }
+}
+@media screen and (max-width: 768px){
+    main{
+        margin: 0px;
+    }
+    
+    .navMenu{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0;
+        justify-content: flex-end;
+    }
+    .bannerContainer{
+        flex-direction: column-reverse;
+    }
+    .money{
+        margin: 10px;
+        text-align: center;
+    }
+    .banner{
+        margin-top: 50px;
+    }
+    .bannerDescription{
+        text-align: center;
+    }
+    
+    .bannerImg{
+        width: 100%;
+    }
+    .bannerDescription{
+        width: 100%;
+        padding: 0;
+    }
+    .cardHead{
+        flex-direction: column;
+    }
+    .bodyCard{
+        width: 80%;
+    }
+    .cardHead{
+        align-items: center;
+        row-gap: 10px;
+        margin-top: 20px;
+    }
+    .cardParent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardD{
+        width: 80%;
+       
+    }
+    .navLogo{
+        margin-left: 0;
+    }
+}
